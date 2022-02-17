@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Product Landing Page</title>
+    <style type="text/css">
+      body {
+        font-family: Helvetica;
+        background: #FFFFFF;
+        color: #344347;
+      }
+      header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1px;
+        background: #F2F2F2;
+        color: black;
+      }
+      #header-img {
+        height: 70px;
+        width: auto;
+        margin-left: 10px;
+      }
+      #company-name {
+        font-size: 30px;
+        margin-left: 5px;
+        margin-right: auto;
+      }
+      #nav-bar {
+        margin: 0 0 0 auto;
+      }
+      nav li {
+        display: inline;
+      }
+      .nav-link {
+        padding: 10px;
+        margin-right: 20px;
+        color: black;
+      }
+      #title {
+        font-size: 50px;
+        margin-top: 120px;
+        text-align: center;
+      }
+      #video {
+        width: 420px;
+        height: 315px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        border-radius: 5px;
+      }
+      p, h2 {
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      #info {
+        font-size: 20px;
+      }
+      hr {
+        width: 70%;
+        border: 1px solid #F2F2F2;
+      }
+      form {
+        text-align: center;
+      }
+      #email, #submit {
+        padding: 5px;
+      }
+      #email {
+        width: 200px;
+      }
+      @media (max-width: 570px) {
+        #header-img { height: 60px; }
+        #company-name { font-size: 25px; }
+        .nav-link { margin-right: 10px; }
+        #title { font-size: 40px; }
+        #video { height: 250px; width: 325px; }
+        p, h2 { margin-left: 10%; margin-right: 10%; }
+        h2 { font-size: 25px; }
+        hr { width: 80%; }
+        #info { font-size: 17px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img src="https://www.freepnglogos.com/uploads/xiaomi-png/xiaomi-drone-review-best-drone-for-under-pevly-10.png" id="header-img" alt="Company Logo">
+      <h2 id="company-name">Xiaomi Mi</h2>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#specs" class="nav-link">Specs</a></li>
+          <li><a href="#video" class="nav-link">Video</a></li>
+          <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 id="title">Mi Smart Band 6</h1>
+
+    <p>No.1 wearable band brand in the world.</p><br>
+
+    <div id="specs">
+      <h2>Specs:</h2>
+      <p id="info"><strong>Display - </strong>1.56 AMOLED</p><hr>
+      <p id="info"><strong>Sensors - </strong>High precision 6-axis sensor and PPG heart rate sensor</p><hr>
+      <p id="info"><strong>Battery life - </strong>14-day extra-long battery life with magnetic charger</p><hr>
+      <p id="info"><strong>Sports - </strong>30 fitness modes</p><hr>
+      <p id="info"><strong>Health - </strong>Heart rate and sleep monitoring with women's health tracking</p>
+    </div><br>
+
+    <iframe id="video" src="https://www.youtube.com/embed/TI3a9yPyBOk"></iframe><br><br>
+
+    <div id="newsletter">
+      <p>If you want to receive weekly emails with information about us and our products, enter your email here:</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <input type="submit" id="submit">
+      </form>
+    </div><br><br>
+
+  </body>
+</html>
